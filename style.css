@@ -76,6 +76,7 @@ body {
 .author img {
   width: 30px;
   border-radius: 50%;
+  margin-top: 18px;
 }
 
 .author-name {
