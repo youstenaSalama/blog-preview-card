@@ -1,0 +1,159 @@
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Gray500: hsl(0, 0%, 42%);
+  --Gray950: hsl(0, 0%, 7%);
+}
+
+body {
+  font-family: 'Figtree', sans-serif;
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.card {
+  background-color: var(--White);
+  max-width: 280px;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 5px 5px 0 var(--Gray950);
+  border: 1px solid var(--Gray950);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.category {
+  display: inline-block;
+  background-color: var(--yellow);
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.date {
+  font-size: 12px;
+  margin-bottom: 12px;
+  color: var(--Gray950);
+  font-weight: 600;
+}
+
+.title {
+  font-weight: 800;
+  color: var(--Gray950);
+  font-size: 18px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.title:hover {
+  color: var(--yellow);
+}
+
+.description {
+  font-size: 13px;
+  color: var(--Gray500);
+  margin-bottom: 18px;
+  line-height: 1.4;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.author img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+.author-name {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--Gray950);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+  color: var(--Gray950);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+@media (min-width: 1024px) {
+  .card {
+    max-width: 300px;
+    padding: 18px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .category {
+    font-size: 13px;
+    padding: 9px 14px;
+  }
+
+  .author img {
+    width: 32px;
+  }
+
+  .author-name {
+    font-size: 14px;
+  }
+}
+@media (max-width: 375px) {
+  .card {
+    max-width: 260px;       
+    padding: 10px;          
+  }
+
+  .category {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+
+  .date {
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+
+  .title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .description {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  .author img {
+    width: 28px;
+  }
+
+  .author-name {
+    font-size: 12px;
+  }
+}
